@@ -12,7 +12,7 @@ const SumAB = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        fetch('http://3.35.167.253:3001/api/sum/', {
+        fetch('/api/sum/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
