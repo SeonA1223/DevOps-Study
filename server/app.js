@@ -10,6 +10,12 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
+var redis = require('redis');
+
+
+const redisHost = "13.125.6.99";
+var client = redis.createClient(6379, redisHost);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 
@@ -21,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(function (req, res, next) {
-  res.header('Access-Control-Allow-Origin', `http://3.35.167.253`);
+  res.header('Access-Control-Allow-Origin', `http://13.125.6.99`);
   res.header(
     'Access-Control-Allow-Headers',
     'Origin, X-Requested-With, Content-Type, Accept',
@@ -29,16 +35,35 @@ app.use(function (req, res, next) {
   next();
 });
 
+client.on("error", (err) => {
+  console.log(err);
+});
+
+client.on("ready", () => {
+  console.log("Redis is ready");
+})
+
+client.on("connect", () => {
+  console.log("Connected");
+})
+
+app.use(function (req, res, next) {
+  req.cache = client;
+  next();
+})
+
+
+
 app.use('/api', indexRouter);
 
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

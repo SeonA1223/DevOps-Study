@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState } from 'react';
 
 const SumAB = () => {
     const [inputs, setInputs] = useState({
@@ -19,9 +19,9 @@ const SumAB = () => {
             },
             body: JSON.stringify(inputs)
         })
-        .then(res => res.json())    
-        .then(data => setResult(data.result))
-        .catch(error => console.error(error))
+            .then(res => res.json())
+            .then(data => setResult(data.result))
+            .catch(error => console.error(error))
 
     }
 
@@ -29,7 +29,7 @@ const SumAB = () => {
         const { value, name } = event.target; //e.target에서 name과 value 추출
         setInputs({
             ...inputs,
-            [name] : value
+            [name]: value
         });
     }
 
@@ -42,33 +42,33 @@ const SumAB = () => {
 
     return (
         <>
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label>
-                    value A :  
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label>
+                        value A :
                     <input
-                        type="text"
-                        name="valueA"
-                        value = {valueA}
-                        onChange={handleChange}
-                    />
-                </label>
-                <br />
-                <label>
-                    value B :  
+                            type="text"
+                            name="valueA"
+                            value={valueA}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <br />
+                    <label>
+                        value B :
                     <input
-                        type="text"
-                        name="valueB"
-                        value = {valueB}
-                        onChange={handleChange}
-                    />
-                </label>
-                <br />
-                <input type="submit"  value="Calculation"/>
-                <input type="button" onClick={onReset} value="reset"/>
-            </div>
-        </form>
-        <h2>{result}</h2>
+                            type="text"
+                            name="valueB"
+                            value={valueB}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <br />
+                    <input type="submit" value="Calculation" />
+                    <input type="button" onClick={onReset} value="reset" />
+                </div>
+            </form>
+            <h2>{result}</h2>
         </>
     )
 
