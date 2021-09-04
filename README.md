@@ -136,7 +136,7 @@ ec2 = instance = vm = computer
 
 ### reference
 
-[[초보자를 위한 AWS웹 구축\] 4. 네트워크 구성하기(VPC, Subnet, Route Table, Internet Gateway)](https://tech.cloud.nongshim.co.kr/2018/10/16/4-네트워크-구성하기vpc-subnet-route-table-internet-gateway/)
+[4. 네트워크 구성하기(VPC, Subnet, Route Table, Internet Gateway)](https://tech.cloud.nongshim.co.kr/2018/10/16/4-네트워크-구성하기vpc-subnet-route-table-internet-gateway/)
 
 [VS code Remote-ssh로 AWS EC2 인스턴스 접속 및 개발하는 법](https://director-joe.kr/80)
 
