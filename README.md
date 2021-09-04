@@ -1,6 +1,6 @@
 # AWS Infra 스터디
 
-<img src="images/메인.PNG" width="700px">
+<img src="/images/메인.png" width="700px">
 
 - [AWS 기본개념](#AWS-기본개념)
 
