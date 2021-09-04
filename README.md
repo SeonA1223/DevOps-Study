@@ -1,4 +1,6 @@
-AWS Infra 스터디
+# AWS Infra 스터디
+
+<img src="./images/메인.PNG" width="700px">
 
 - [AWS 기본개념](#AWS-기본개념)
 
@@ -52,7 +54,7 @@ SSH 원격 프로토콜
 
 ec2 (작은 컴퓨터) 등 가상 머신에 접근하는 방법(t2.micro선택)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/56d71817-6729-4c87-b5d6-fa1ccbc37f58/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/56d71817-6729-4c87-b5d6-fa1ccbc37f58/Untitled.png)
+<img src="./images/aws1.PNG" width="700px">
 
 **vscode로 접근법**
 
@@ -61,7 +63,7 @@ ec2 (작은 컴퓨터) 등 가상 머신에 접근하는 방법(t2.micro선택)
 1. key.pem 다운로드
 2. ssh\config 작성
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/122cb397-ae4d-46ba-bb86-9d2bbabbb850/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/122cb397-ae4d-46ba-bb86-9d2bbabbb850/Untitled.png)
+<img src="./images/aws2.PNG" width="700px">
 
 ### Subnet
 
@@ -78,8 +80,7 @@ ec2 (작은 컴퓨터) 등 가상 머신에 접근하는 방법(t2.micro선택)
 
 AZ는 물리적 공간으로 분리되어 있기 때문에 이중화 구성해 하나의 AZ에 장애가 발생하더라도 서비스 문제 없음
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dad0392e-7213-4065-be2b-9016412e34c1/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dad0392e-7213-4065-be2b-9016412e34c1/Untitled.png)
-
+<img src="./images/aws3.PNG" width="700px">
 
 
 ### Internet Gateway
@@ -112,29 +113,26 @@ IGW
 
    트래픽이 vpc로 전달되긴 전에 인스턴스의 private ip주소로 변환
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96a341e4-7522-4ccf-888e-c0994dfaa95f/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96a341e4-7522-4ccf-888e-c0994dfaa95f/Untitled.png)
+<img src="./images/aws4.PNG" width="700px">
 
 ### Bastion Host
 
 침입 차단 소프트웨어가 설치되어 내부와 외부 네트워크 사이에서 일종의 게이트 역할을 수행하는 호스트
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/14e75516-06d2-4885-ab44-a1e645724d89/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/14e75516-06d2-4885-ab44-a1e645724d89/Untitled.png)
-
+<img src="./images/aws5.PNG" width="700px">
 VPC 및 EC2 설치 후 React와 Express를 localhost를 통해 연결시켰다.
 
-**CORS error**
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ad80ca37-c34e-47ce-ae16-45dc68169808/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ad80ca37-c34e-47ce-ae16-45dc68169808/Untitled.png)
+<img src="./images/aws6.PNG" width="700px">
 
 위와 같은 이미지대로 프로젝트 구성해보는 것이 목적
 
 ### reference
 
-- pdf를 중점적으로 볼 것!
-
 [[초보자를 위한 AWS웹 구축\] 4. 네트워크 구성하기(VPC, Subnet, Route Table, Internet Gateway)](https://tech.cloud.nongshim.co.kr/2018/10/16/4-네트워크-구성하기vpc-subnet-route-table-internet-gateway/)
 
 [VS code Remote-ssh로 AWS EC2 인스턴스 접속 및 개발하는 법](https://director-joe.kr/80)
+
+<br/>
 
 ## Docker
 
@@ -156,7 +154,7 @@ VPC 및 EC2 설치 후 React와 Express를 localhost를 통해 연결시켰다.
 - 여러개의 어플리케이션을 단일 호스트에서 구동하기 위한 개념
 - linux namespace라는 기술을 이요해 구현된 가상화 기법을 사용해 각자 독립된 network 공간을 할당받음
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9a9e58be-b9e2-4b5e-b79b-5ea7c0364e45/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9a9e58be-b9e2-4b5e-b79b-5ea7c0364e45/Untitled.png)
+<img src="./images/docker1.PNG" width="700px">
 
 **이미지란?**
 
@@ -171,13 +169,13 @@ VPC 및 EC2 설치 후 React와 Express를 localhost를 통해 연결시켰다.
 - 컨테이너는 이미지 + 읽기/쓰기 레이어
 - 기존 레이어에서 바뀌는 부분만 레이어로 추가
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/76e44bc7-d5a8-45d3-bfa8-b28a0b052da3/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/76e44bc7-d5a8-45d3-bfa8-b28a0b052da3/Untitled.png)
+<img src="./images/docker2.PNG" width="700px">
 
 ### DockerHub
 
 github처럼 Docker hub를 통해 이미지 관리할 수 있음(push, pull)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d2cc111d-cbdc-4f67-94dd-189453ef0ad0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d2cc111d-cbdc-4f67-94dd-189453ef0ad0/Untitled.png)
+<img src="./images/docker3.PNG" width="700px">
 
 ### Docker Port
 
@@ -197,7 +195,7 @@ github처럼 Docker hub를 통해 이미지 관리할 수 있음(push, pull)
 
 소프트웨어 브릿지 네트워크에 연결된 컨테이너들 끼리 통신할 수 있도록 하면서 해당 브릿지에 연결되지 않은 컨테이너들로 부터 격리하는 기능도 제공한다
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/978cc900-fde2-420c-ac58-35f3aa686fbf/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/978cc900-fde2-420c-ac58-35f3aa686fbf/Untitled.png)
+<img src="./images/docker4.PNG" width="700px">
 
 ### Docker 전체 흐름
 
@@ -325,7 +323,7 @@ github처럼 Docker hub를 통해 이미지 관리할 수 있음(push, pull)
 docker image pull nginx //dockerhub에서 nginx push해서 사용하면 간단!
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d6bd99dd-560c-4075-8983-c55a548ca45e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d6bd99dd-560c-4075-8983-c55a548ca45e/Untitled.png)
+<img src="./images/nginx1.PNG" width="700px">
 
 nginx에서 express로 바로 요청하는 것
 
@@ -460,7 +458,7 @@ Redis는 빠른 오픈 소스 인 메모리 키-값 데이터 구조 스토어�
 
 Redis는 세션 관리 작업에 매우 적합합니다. Redis를 세션 키에 대한 적절한 TTL과 함께 빠른 키 값 스토어로 사용하면 간단하게 세션 정보를 관리할 수 있습니다. 세션 관리는 주로 게임, 전자 상거래 웹 사이트, 소셜 미디어 플랫폼을 비롯한 온라인 애플리케이션에 필요합니다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fe7ef7f3-afa4-496a-8570-75d678e9cf5a/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fe7ef7f3-afa4-496a-8570-75d678e9cf5a/Untitled.png)
+ 
 
 ```jsx
 sudo docker pull redis //docker hub에서 redis 가져오기
@@ -541,7 +539,7 @@ module.exports = router;
 
 한달에 0.55달러 내야한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0ae51080-a3a1-4258-a503-c2c9e4806a0b/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0ae51080-a3a1-4258-a503-c2c9e4806a0b/Untitled.png)
+<img src="./images/route531.PNG" width="700px">
 
 1. **무료 도메인 발급**
 
@@ -549,7 +547,7 @@ module.exports = router;
 
    [Freenom - A Name for Everyone](https://www.freenom.com/)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/adbb7c87-9cd9-4071-85d8-3a26d45051c9/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/adbb7c87-9cd9-4071-85d8-3a26d45051c9/Untitled.png)
+<img src="./images/route532.PNG" width="700px">
 
 1. **ACM 인증받기**
 
@@ -561,13 +559,13 @@ ACM(AWS Certificate Manager) ← ACM이 해당 서비스의 접근 도메인이 
 
 1. **Route53에서 호스팅 영역 생성하기**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/62811d27-6a4b-4f42-bcf2-255ac35ca33d/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/62811d27-6a4b-4f42-bcf2-255ac35ca33d/Untitled.png)
+<img src="./images/route533.PNG" width="700px">
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fb731bee-3e42-4cdc-ae20-539aa64a7fa3/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fb731bee-3e42-4cdc-ae20-539aa64a7fa3/Untitled.png)
+<img src="./images/route534.PNG" width="700px">
 
 **4.  로드밸런서 연결해 https 추가**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/64e19248-7a27-4750-92c0-d94e926f7e2f/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/64e19248-7a27-4750-92c0-d94e926f7e2f/Untitled.png)
+<img src="./images/route535.PNG" width="700px">
 
 1. nginx에서도 만약게 경우를 대비해서   http → https로 설정해주기
 
@@ -644,7 +642,7 @@ CloudWatch는 애플리케이션을 모니터링하고 시스템 전반의 성�
 3. 고정비용 없이 사용시간에 대해서만 비용
 4. CloudWatch에서 알람 발생 ⇒ SNS 푸시 서비스 호출 ⇒ Lamda 함수 트리거 ⇒ 연동된 Slack 채널로 알람전송
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b594dc2e-0500-487e-9083-4032b59f8724/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b594dc2e-0500-487e-9083-4032b59f8724/Untitled.png)
+<img src="./images/cloudwatch1.PNG" width="700px">
 
 ------
 
@@ -692,13 +690,13 @@ systemctl enable docker
 
 ### cors문제
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b66f623-94fd-445f-a615-65a3e469f00e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b66f623-94fd-445f-a615-65a3e469f00e/Untitled.png)
+<img src="./images/cors1.PNG" width="700px">
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9e666727-e62e-4160-b549-eaa3e699fe31/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9e666727-e62e-4160-b549-eaa3e699fe31/Untitled.png)
+<img src="./images/cors2.PNG" width="700px">
 
 ### Failed to load resource: net::ERR_CONNECTION_REFUSED
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ef548d95-185b-4232-883c-d8fc66a0f224/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ef548d95-185b-4232-883c-d8fc66a0f224/Untitled.png)
+<img src="./images/cors3.PNG" width="700px">
 
 이유 : localhost로 fetch 때렸기 때문(로컬은 "내 컴퓨터")
 
