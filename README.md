@@ -54,7 +54,7 @@ SSH 원격 프로토콜
 
 ec2 (작은 컴퓨터) 등 가상 머신에 접근하는 방법(t2.micro선택)
 
-<img src="/images/aws1.PNG" width="700px">
+<img src="/images/aws1.png" width="700px">
 
 **vscode로 접근법**
 
