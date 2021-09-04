@@ -17,6 +17,12 @@
 - [Linux 명령어](#Linux-명령어)
 
 
+## TeamMate
+
+- 정혜수[@ssue96](https://github.com/ssue96)
+- 지수연 [@pondsuyeon](https://github.com/pondsuyeon)
+- 박선아[@SeonA1223](https://github.com/SeonA1223)
+
 
 ## AWS 기본개념
 
@@ -538,6 +544,23 @@ module.exports = router;
 - Amazon S3 버킷
 
 한달에 0.55달러 내야한다.
+
+### ALB vs NLB 차이
+
+- 로드밸런서
+  - 서버 Health Check, SSL(HTTPS) 지원, HA(High Availability, 고가용성) 지원
+  - 서비스간 라우팅, Health Check와 같은 서비스 간 통제 기능들이 애플리케이션에서 코드로 구현하는 것이 아닌 인프라 단에서 구현함으로서 각 서비스들을 관리하는데 훨씬 편리해지기 때문에 최근 유행하는 MSA(Micro Service Architecture)에서 LB는 필수
+  
+- ALB
+  - (L7 계층)애플리케이션 계층에서 동작하는 로드밸런서
+  - 유동 IP
+  - SSL을 적용 가능
+  - path-based(경로 기반) 라우팅 지원(Context 기반 라우팅)
+- NLB
+  - (L4 계층)네트워크 계층에서 동작
+  - 고정 IP 주소 지원
+  - SSL 적용이 인프라 단에서 불가능하여 애플리케이션에서 따로 적용
+  - IP:Port 기반으로 라우팅
 
 <img src="./images/route531.png" width="700px">
 
