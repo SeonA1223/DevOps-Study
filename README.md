@@ -572,7 +572,7 @@ module.exports = router;
 
 <img src="./images/route532.png" width="700px">
 
-1. **ACM 인증받기**
+2. **ACM 인증받기**
 
 https 는 사용하려는 서비스와 SSL인증서를 통해 안전하게 통신할 수 있는 프로토콜
 
@@ -580,7 +580,7 @@ ACM(AWS Certificate Manager) ← ACM이 해당 서비스의 접근 도메인이 
 
 나는 검증 하루 걸렸다....
 
-1. **Route53에서 호스팅 영역 생성하기**
+3. **Route53에서 호스팅 영역 생성하기**
 
 <img src="./images/route533.png" width="700px">
 
@@ -590,7 +590,7 @@ ACM(AWS Certificate Manager) ← ACM이 해당 서비스의 접근 도메인이 
 
 <img src="./images/route535.png" width="700px">
 
-1. nginx에서도 만약게 경우를 대비해서   http → https로 설정해주기
+4. nginx에서도 만약게 경우를 대비해서   http → https로 설정해주기
 
 ```jsx
 server {     
@@ -612,7 +612,7 @@ server {
 }
 ```
 
-1. (추가) www → non www
+5. (추가) www → non www
 
 ```jsx
 server {
@@ -637,6 +637,8 @@ NS : Name Sever - ip주소랑 도메인을 연결시키준다.
 [[2019.06.25\] AWS ACM(Certificate Manager)이란?](https://helloinyong.tistory.com/149)
 
 [[초보자를 위한 AWS 웹구축\] 8. 무료 도메인으로 Route 53 등록 및 ELB 연결](https://tech.cloud.nongshim.co.kr/2018/10/16/초보자를-위한-aws-웹구축-8-무료-도메인으로-route-53-등록-및-elb/)
+
+<br/>
 
 ## CloudWatch
 
@@ -676,6 +678,7 @@ CloudWatch는 애플리케이션을 모니터링하고 시스템 전반의 성�
 [Lambda를 사용하여 EC2 인스턴스를 정기적으로 중지 및 시작하기](https://aws.amazon.com/ko/premiumsupport/knowledge-center/start-stop-lambda-cloudwatch/)
 
 
+<br/>
 
 ## 에러처리
 
@@ -725,7 +728,7 @@ systemctl enable docker
 
 브라우저를 띄우는 컴퓨터가 현재 aws(클라우드)에 위치하고, fetch때리는 익스프레스 서버 또한 클라우드에 있기 때문에 로컬이 아니라 해당 클라우드에 공용ip를 사용해야한다.
 
-
+<br/>
 
 ## 리눅스 명령어
 
