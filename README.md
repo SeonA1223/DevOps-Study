@@ -19,9 +19,9 @@
 
 ## TeamMate
 
-- 정혜수[@ssue96](https://github.com/ssue96)
+- 정혜수 [@ssue96](https://github.com/ssue96)
 - 지수연 [@pondsuyeon](https://github.com/pondsuyeon)
-- 박선아[@SeonA1223](https://github.com/SeonA1223)
+- 박선아 [@SeonA1223](https://github.com/SeonA1223)
 
 
 ## AWS 기본개념
@@ -60,7 +60,7 @@ ec2 = instance = vm = computer
 
 	ec2 (작은 컴퓨터) 등 가상 머신에 접근하는 방법(t2.micro선택)
 
-	<img src="/images/aws1.png" width="700px">
+<img src="/images/aws1.png" width="700px">
 
 **vscode로 접근법**
 
@@ -69,7 +69,7 @@ ec2 = instance = vm = computer
 	1. key.pem 다운로드
 	2. ssh\config 작성
 
-	<img src="./images/aws2.png" width="700px">
+<img src="./images/aws2.png" width="700px">
 
 ### Subnet
 
@@ -86,7 +86,7 @@ ec2 = instance = vm = computer
 
 	AZ는 물리적 공간으로 분리되어 있기 때문에 이중화 구성해 하나의 AZ에 장애가 발생하더라도 서비스 문제 없음
 
-	<img src="./images/aws3.png" width="700px">
+<img src="./images/aws3.png" width="700px">
 
 
 ### Internet Gateway
@@ -119,16 +119,16 @@ ec2 = instance = vm = computer
 
    		트래픽이 vpc로 전달되긴 전에 인스턴스의 private ip주소로 변환
 
-		<img src="./images/aws4.png" width="700px">
+<img src="./images/aws4.png" width="700px">
 
 ### Bastion Host
 
 	침입 차단 소프트웨어가 설치되어 내부와 외부 네트워크 사이에서 일종의 게이트 역할을 수행하는 호스트
 
-	<img src="./images/aws5.png" width="700px">
+<img src="./images/aws5.png" width="700px">
 	VPC 및 EC2 설치 후 React와 Express를 localhost를 통해 연결시켰다.
 
-	<img src="./images/aws6.png" width="700px">
+<img src="./images/aws6.png" width="700px">
 
 	위와 같은 이미지대로 프로젝트 구성해보는 것이 목적
 
@@ -160,7 +160,7 @@ ec2 = instance = vm = computer
 	- 여러개의 어플리케이션을 단일 호스트에서 구동하기 위한 개념
 	- linux namespace라는 기술을 이요해 구현된 가상화 기법을 사용해 각자 독립된 network 공간을 할당받음
 
-	<img src="./images/docker1.png" width="700px">
+<img src="./images/docker1.png" width="700px">
 
 **이미지란?**
 
@@ -175,13 +175,13 @@ ec2 = instance = vm = computer
 	- 컨테이너는 이미지 + 읽기/쓰기 레이어
 	- 기존 레이어에서 바뀌는 부분만 레이어로 추가
 
-	<img src="./images/docker2.png" width="700px">
+<img src="./images/docker2.png" width="700px">
 
 ### DockerHub
 
 	github처럼 Docker hub를 통해 이미지 관리할 수 있음(push, pull)
 
-	<img src="./images/docker3.png" width="700px">
+<img src="./images/docker3.png" width="700px">
 
 ### Docker Port
 
@@ -204,7 +204,7 @@ ec2 = instance = vm = computer
 
 	소프트웨어 브릿지 네트워크에 연결된 컨테이너들 끼리 통신할 수 있도록 하면서 해당 브릿지에 연결되지 않은 컨테이너들로 부터 격리하는 기능도 제공한다
 
-	<img src="./images/docker4.png" width="700px">
+<img src="./images/docker4.png" width="700px">
 
 ### Docker 전체 흐름
 
@@ -591,7 +591,7 @@ module.exports = router;
 
 **4.  로드밸런서 연결해 https 추가**
 
-	<img src="./images/route535.png" width="700px">
+<img src="./images/route535.png" width="700px">
 
 4. nginx에서도 만약게 경우를 대비해서   http → https로 설정해주기
 
@@ -670,7 +670,7 @@ module.exports = router;
 	3. 고정비용 없이 사용시간에 대해서만 비용
 	4. CloudWatch에서 알람 발생 ⇒ SNS 푸시 서비스 호출 ⇒ Lamda 함수 트리거 ⇒ 연동된 Slack 채널로 알람전송
 
-	<img src="./images/cloudwatch1.png" width="700px">
+<img src="./images/cloudwatch1.png" width="700px">
 	
 
 ### reference
@@ -716,13 +716,13 @@ module.exports = router;
 
 ### cors문제
 
-	<img src="./images/cors1.png" width="700px">
+<img src="./images/cors1.png" width="700px">
 
-	<img src="./images/cors2.png" width="700px">
+<img src="./images/cors2.png" width="700px">
 
 ### Failed to load resource: net::ERR_CONNECTION_REFUSED
 
-	<img src="./images/cors3.png" width="700px">
+<img src="./images/cors3.png" width="700px">
 
 이유 : localhost로 fetch 때렸기 때문(로컬은 "내 컴퓨터")
 
