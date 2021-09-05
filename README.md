@@ -19,6 +19,7 @@
 
 ## TeamMate
 
+- 배재건 [@jaegeon-tatum](https://github.com/jaegeon-tatum?tab=repositories)
 - 정혜수 [@ssue96](https://github.com/ssue96)
 - 지수연 [@pondsuyeon](https://github.com/pondsuyeon)
 - 박선아 [@SeonA1223](https://github.com/SeonA1223)
