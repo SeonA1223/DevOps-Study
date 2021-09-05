@@ -4,7 +4,7 @@
 
 - [AWS 기본개념](#AWS-기본개념)
 
-- [Docker ](#Docker)
+- [Docker](#Docker)
 
 - [Nginx](#Nginx)
 
@@ -194,7 +194,6 @@ ec2 = instance = vm = computer
 
 [15. [Docker\] 도커에서 Container 포트와 Host 포트의 개념](https://m.blog.naver.com/PostView.nhn?blogId=alice_k106&logNo=220278762795&proxyReferer=&proxyReferer=https:%2F%2Fwww.google.com%2F)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2421fc60-a233-4d65-bde7-ff665df17097/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2421fc60-a233-4d65-bde7-ff665df17097/Untitled.png)
 
 ### Docker Network
 
